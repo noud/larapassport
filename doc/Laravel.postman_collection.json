@@ -1,0 +1,190 @@
+{
+	"info": {
+		"_postman_id": "f419b626-da0c-44fc-9ef5-d0a329dd046b",
+		"name": "Laravel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://larapassport.localhost/api/v1/register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Noud de Brouwer",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "noud4@home.nl",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "test1234!",
+							"type": "text"
+						},
+						{
+							"key": "c_password",
+							"value": "test1234!",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://larapassport.localhost/api/v1/register",
+					"protocol": "http",
+					"host": [
+						"larapassport",
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v1",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://larapassport.localhost/api/v1/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Noud de Brouwer",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "noud4@home.nl",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "test1234!",
+							"type": "text"
+						},
+						{
+							"key": "c_password",
+							"value": "test1234!",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://larapassport.localhost/api/v1/login",
+					"protocol": "http",
+					"host": [
+						"larapassport",
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v1",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://larapassport.localhost/api/v1/getUser",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImJmMzRlOWRhM2EyYTVhN2E2MTgwZDI2ZTcxZTA1MmM0YzdiZTIzYTQxZDIwM2FiZDgxYTEyZDliMzY3NjY1ZGY3OTdjMjY1MTI4MzYyY2ViIn0.eyJhdWQiOiIxIiwianRpIjoiYmYzNGU5ZGEzYTJhNWE3YTYxODBkMjZlNzFlMDUyYzRjN2JlMjNhNDFkMjAzYWJkODFhMTJkOWIzNjc2NjVkZjc5N2MyNjUxMjgzNjJjZWIiLCJpYXQiOjE1NjQ2MDIzNjgsIm5iZiI6MTU2NDYwMjM2OCwiZXhwIjoxNTk2MjI0NzY4LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.uiDD7T6MgDjxohDbG0JTs0WYbHf_3c41bxHvTu8fCpVV_nspsLkAORyqYA-h-PUvw8xCrDWx4KgGjHYz6wYiGu_p7lc8WhGDbTM6Ix4bjonrD0-s9HvNwlyS2xPixCvCCO4_j6VJ0XU8uJpjRcV6ZYr-1LJoe1WSvaIERMBwajYweLnFQcM2rx_sbCS7kyv-4PBM69Jvfq7wtZmn1aJsmYnehQzONE6DSOWvBglcbug_b2IWDXfRtA6vUeqwjpeFSDqc69MyVsHMm2yojjpyObMk6gVDk9LYi3RCpVWFkNiLRFtNje0uQbz99oFsbwirDMnFXguc0wOLrHqGpfXJ63y5PzxRpiGlugRUHmf3IephM2bUUVHFU7Eeu7fsRvvQlmTRUaOs2Jot9o5C_GRnvWFc9lZ8RfmaCjF_rfjbTuTMJ8nKncHVH1s_NDtAH_EQHSyPyJlbhWIqFSGimIt2NoSh3IfHSCaStS2DvyE8k92Kn2Hw7JzMCKnR75XDgW10iDfw9y2DASic9qJ56Em_4BXz5_MFHRkdLckpb73uzMvfDug8QdsUJctUm9GoYb1ff3ujpdDEtw7rhQhVrvXZL-_d-OiNj3k_6vEgOoC7oxwApBt2K8iCQJLv_hq7PXulP64ruo3yu0nTSthMlh61KcKR2EnnXwnZil2PuaPVEuI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Noud de Brouwer",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "noud4@home.nl",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "test1234!",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "c_password",
+							"value": "test1234!",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://larapassport.localhost/api/v1/getUser",
+					"protocol": "http",
+					"host": [
+						"larapassport",
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v1",
+						"getUser"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
